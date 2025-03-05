@@ -20,11 +20,8 @@ clean:
 # 其他目標
 $(PLATS) none install install-unix local:
 	$(MAKE) -C src $@
-
 print:
 	$(MAKE) -C src $@
-
 test:
 	lua test/hello.lua
-
 .PHONY: all clean test
